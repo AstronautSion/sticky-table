@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sticky Table Example</title>
+<link rel="stylesheet" href="./src/css/sticky-table.css">
+<script src="./src/js/sticky-table.js"></script>
+</head>
+<body>
+    <table id="table" class="table"></table>
+<script>
+   
+new Tables({
+    targetId: 'table',
+    responsive:true,
+    mode: 'normal',
+    stickyCol : 2,
+    listCount: 10,
+    pageCount: 5,
+    datas : [{
+        head: ['아이디', '이름', '나이', '질문', '비고'],
+        body: [{
+            id: 1,
+            name: 'sean',
+            age: 29,
+            msg: 'aasiofjapsoifdjaspodifjasfoijdfaposfkasjf;laksjfa;difjsaofiasjfpaosifjasfoisajfls;dkfj;i asdfpoiasjfsdpof jsdpfoisadjfpasoifjasfpoasj  oisdjfpasdfoi jsdfp sidjf poisjfsapodif jsadfop ijadsf',
+            etc: 'asdofijsdfo jdsfpoiasdjf pdsof ijsadf podsaijfsdpofijsafiposdfjsdpoif jsdfo ijsadf piosdfj sopdifj sado ijsad poasdij aspdiojasdp oijasd iopasjdf osd'
+        },{
+            id: 2,
+            name: 'sdff',
+            age: 40,
+            msg: 'aasiofjapsoifdjaspodifjasfoijdfaposfkasjf;laksjfa;difjsaofiasjfpaosifjasfoisajfls;dkfj;i asdfpoiasjfsdpof jsdpfoisadjfpasoifjasfpoasj  oisdjfpasdfoi jsdfp sidjf poisjfsapodif jsadfop ijadsf',
+            etc: 'asdofijsdfo jdsfpoiasdjf pdsof ijsadf podsaijfsdpofijsafiposdfjsdpoif jsdfo ijsadf piosdfj sopdifj sado ijsad poasdij aspdiojasdp oijasd iopasjdf osd'
+        },{
+            id: 3,
+            name: 'vsevvan',
+            age: 22,
+            msg: 'aasiofjapsoifdjaspodifjasfoijdfaposfkasjf;laksjfa;difjsaofiasjfpaosifjasfoisajfls;dkfj;i asdfpoiasjfsdpof jsdpfoisadjfpasoifjasfpoasj  oisdjfpasdfoi jsdfp sidjf poisjfsapodif jsadfop ijadsf',
+            etc: 'asdofijsdfo jdsfpoiasdjf pdsof ijsadf podsaijfsdpofijsafiposdfjsdpoif jsdfo ijsadf piosdfj sopdifj sado ijsad poasdij aspdiojasdp oijasd iopasjdf osd'
+        },{
+            id: 4,
+            name: 'pqweean',
+            age: 11,
+            msg: 'aasiofjapsoifdjaspodifjasfoijdfaposfkasjf;laksjfa;difjsaofiasjfpaosifjasfoisajfls;dkfj;i asdfpoiasjfsdpof jsdpfoisadjfpasoifjasfpoasj  oisdjfpasdfoi jsdfp sidjf poisjfsapodif jsadfop ijadsf',
+            etc: 'asdofijsdfo jdsfpoiasdjf pdsof ijsadf podsaijfsdpofijsafiposdfjsdpoif jsdfo ijsadf piosdfj sopdifj sado ijsad poasdij aspdiojasdp oijasd iopasjdf osd'
+        },{
+            id: 5,
+            name: 'pqweean',
+            age: 4,
+            msg: 'aasiofjapsoifdjaspodifjasfoijdfaposfkasjf;laksjfa;difjsaofiasjfpaosifjasfoisajfls;dkfj;i asdfpoiasjfsdpof jsdpfoisadjfpasoifjasfpoasj  oisdjfpasdfoi jsdfp sidjf poisjfsapodif jsadfop ijadsf',
+            etc: 'asdofijsdfo jdsfpoiasdjf pdsof ijsadf podsaijfsdpofijsafiposdfjsdpoif jsdfo ijsadf piosdfj sopdifj sado ijsad poasdij aspdiojasdp oijasd iopasjdf osd'
+        },{
+            id: 6,
+            name: 'pqweean',
+            age: 2,
+            msg: 'aasiofjapsoifdjaspodifjasfoijdfaposfkasjf;laksjfa;difjsaofiasjfpaosifjasfoisajfls;dkfj;i asdfpoiasjfsdpof jsdpfoisadjfpasoifjasfpoasj  oisdjfpasdfoi jsdfp sidjf poisjfsapodif jsadfop ijadsf',
+            etc: 'asdofijsdfo jdsfpoiasdjf pdsof ijsadf podsaijfsdpofijsafiposdfjsdpoif jsdfo ijsadf piosdfj sopdifj sado ijsad poasdij aspdiojasdp oijasd iopasjdf osd'
+        }]
+    }],
+    
+});
+</script>
+</body>
+</html>
