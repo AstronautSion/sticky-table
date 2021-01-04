@@ -8,55 +8,43 @@
 <script src="./src/js/sticky-table.js"></script>
 </head>
 <body>
-    <table id="table" class="table"></table>
+    <div style="width:500px">
+        <table id="table" class="table"></table>
+        <table id="table2" class="table"></table>
+    </div>
 <script>
-   
-new Tables({
-    targetId: 'table',
+
+new StickyTable({
+    target: 'table',
     responsive:true,
     mode: 'normal',
     stickyCol : 2,
     listCount: 10,
     pageCount: 5,
     datas : [{
-        head: ['아이디', '이름', '나이', '질문', '비고'],
-        body: [{
-            id: 1,
-            name: 'sean',
-            age: 29,
-            msg: 'aasiofjapsoifdjaspodifjasfoijdfaposfkasjf;laksjfa;difjsaofiasjfpaosifjasfoisajfls;dkfj;i asdfpoiasjfsdpof jsdpfoisadjfpasoifjasfpoasj  oisdjfpasdfoi jsdfp sidjf poisjfsapodif jsadfop ijadsf',
-            etc: 'asdofijsdfo jdsfpoiasdjf pdsof ijsadf podsaijfsdpofijsafiposdfjsdpoif jsdfo ijsadf piosdfj sopdifj sado ijsad poasdij aspdiojasdp oijasd iopasjdf osd'
-        },{
-            id: 2,
-            name: 'sdff',
-            age: 40,
-            msg: 'aasiofjapsoifdjaspodifjasfoijdfaposfkasjf;laksjfa;difjsaofiasjfpaosifjasfoisajfls;dkfj;i asdfpoiasjfsdpof jsdpfoisadjfpasoifjasfpoasj  oisdjfpasdfoi jsdfp sidjf poisjfsapodif jsadfop ijadsf',
-            etc: 'asdofijsdfo jdsfpoiasdjf pdsof ijsadf podsaijfsdpofijsafiposdfjsdpoif jsdfo ijsadf piosdfj sopdifj sado ijsad poasdij aspdiojasdp oijasd iopasjdf osd'
-        },{
-            id: 3,
-            name: 'vsevvan',
-            age: 22,
-            msg: 'aasiofjapsoifdjaspodifjasfoijdfaposfkasjf;laksjfa;difjsaofiasjfpaosifjasfoisajfls;dkfj;i asdfpoiasjfsdpof jsdpfoisadjfpasoifjasfpoasj  oisdjfpasdfoi jsdfp sidjf poisjfsapodif jsadfop ijadsf',
-            etc: 'asdofijsdfo jdsfpoiasdjf pdsof ijsadf podsaijfsdpofijsafiposdfjsdpoif jsdfo ijsadf piosdfj sopdifj sado ijsad poasdij aspdiojasdp oijasd iopasjdf osd'
-        },{
-            id: 4,
-            name: 'pqweean',
-            age: 11,
-            msg: 'aasiofjapsoifdjaspodifjasfoijdfaposfkasjf;laksjfa;difjsaofiasjfpaosifjasfoisajfls;dkfj;i asdfpoiasjfsdpof jsdpfoisadjfpasoifjasfpoasj  oisdjfpasdfoi jsdfp sidjf poisjfsapodif jsadfop ijadsf',
-            etc: 'asdofijsdfo jdsfpoiasdjf pdsof ijsadf podsaijfsdpofijsafiposdfjsdpoif jsdfo ijsadf piosdfj sopdifj sado ijsad poasdij aspdiojasdp oijasd iopasjdf osd'
-        },{
-            id: 5,
-            name: 'pqweean',
-            age: 4,
-            msg: 'aasiofjapsoifdjaspodifjasfoijdfaposfkasjf;laksjfa;difjsaofiasjfpaosifjasfoisajfls;dkfj;i asdfpoiasjfsdpof jsdpfoisadjfpasoifjasfpoasj  oisdjfpasdfoi jsdfp sidjf poisjfsapodif jsadfop ijadsf',
-            etc: 'asdofijsdfo jdsfpoiasdjf pdsof ijsadf podsaijfsdpofijsafiposdfjsdpoif jsdfo ijsadf piosdfj sopdifj sado ijsad poasdij aspdiojasdp oijasd iopasjdf osd'
-        },{
-            id: 6,
-            name: 'pqweean',
-            age: 2,
-            msg: 'aasiofjapsoifdjaspodifjasfoijdfaposfkasjf;laksjfa;difjsaofiasjfpaosifjasfoisajfls;dkfj;i asdfpoiasjfsdpof jsdpfoisadjfpasoifjasfpoasj  oisdjfpasdfoi jsdfp sidjf poisjfsapodif jsadfop ijadsf',
-            etc: 'asdofijsdfo jdsfpoiasdjf pdsof ijsadf podsaijfsdpofijsafiposdfjsdpoif jsdfo ijsadf piosdfj sopdifj sado ijsad poasdij aspdiojasdp oijasd iopasjdf osd'
-        }]
+        head: ['No.', '이름', '나이', '질문', '비고'],
+        body: [
+            [
+                1,
+                'sean', 
+                29, 
+                'Nostrud enim est ea labore cupidatat ex<br> officia do duis pariatur voluptate et.', 
+                'Deserunt aute quis sint eiusmod labore consectetur aliquip ea est eiusmod.'
+            ],[
+                2,
+                'sean', 
+                30, 
+                'Duis consequat sint elit in aliquip Lorem sunt.', 
+                'Ex adipisicing ex quis enim laboris dolore aliqua.'
+            ],
+            [
+                3,
+                'sean', 
+                30, 
+                'Duis consequat sint elit in aliquip Lorem sunt.', 
+                'Ex adipisicing ex quis enim laboris dolore aliqua.'
+            ]
+        ]
     }],
     
 });
